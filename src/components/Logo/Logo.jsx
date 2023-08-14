@@ -1,12 +1,10 @@
 import logo from '../../logo.svg';
-import './Header.scss';
+import './Logo.scss';
 
-function Header() {
+function Logo() {
     return (
-        <header className="header">
-            <img src={logo} className="logo" alt="logo" />
-        </header>
+        <img src={logo} className="logo" alt="logo" />
     );
 }
 
-export default Header;
+export default Logo;

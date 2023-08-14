@@ -1,12 +1,24 @@
-import Logo from '../Logo/Logo';
-import './Header.scss';
+import './Navigation.scss';
 
-function Header() {
+function Navigation() {
     return (
-        <header className="header">
-            <Logo />
-        </header>
+        <nav className="nav">
+            <ul className="nav__list">
+                <li className="nav__item">
+                    <a href="#" className="nav__link">Menu 1</a>
+                </li>
+                <li className="nav__item">
+                    <a href="#" className="nav__link">Menu 2</a>
+                </li>
+                <li className="nav__item">
+                    <a href="#" className="nav__link">Menu 3</a>
+                </li>
+                <li className="nav__item">
+                    <a href="#" className="nav__link">Menu 4</a>
+                </li>
+            </ul>
+        </nav>
     );
 }
 
-export default Header;
+export default Navigation;
