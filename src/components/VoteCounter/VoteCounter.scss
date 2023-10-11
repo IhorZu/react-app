@@ -1,0 +1,26 @@
+.votes {
+  display: flex;
+  margin: 0;
+  padding: 0;
+
+  &__item {
+    display: flex;
+    flex-direction: column;
+    margin: 0 4px;
+  }
+
+  &__btn {
+    padding: 4px;
+    border: 0;
+    background-color: transparent;
+    font-size: 24px;
+    line-height: 1;
+    cursor: pointer;
+    user-select: none;
+  }
+
+  &__number {
+    text-align: center;
+    font: 12px/1 sans-serif;
+  }
+}
