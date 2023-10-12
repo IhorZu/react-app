@@ -29,7 +29,7 @@ const emojis = [
     },
 ];
 
-function VoteCounter() {
+const VoteCounter = () => {
     return (
         <ul className="votes">
             {

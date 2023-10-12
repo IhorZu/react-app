@@ -1,7 +1,7 @@
 import { useState } from 'react';
 
 
-function VoteItem(props) {
+const VoteItem = (props) => {
     const [votes, setVotes] = useState(props.votes);
 
     const increaseVote = () => {
