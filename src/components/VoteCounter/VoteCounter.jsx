@@ -30,14 +30,17 @@ const emojis = [
 ];
 
 const VoteCounter = () => {
+
     return (
-        <ul className="votes">
-            {
-                emojis.map((emoji) => (
-                    <VoteItem key={emoji.id} label={emoji.label} votes={emoji.votes} />
-                ))
-            }
-        </ul>
+        <>
+            <ul className="votes">
+                {
+                    emojis.map((emoji) => (
+                        <VoteItem id={emoji.id} label={emoji.label} votes={emoji.votes} />
+                    ))
+                }
+            </ul>
+        </>
     );
 }
 

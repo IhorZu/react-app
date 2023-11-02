@@ -2,16 +2,20 @@ import { useState } from 'react';
 
 
 const VoteItem = (props) => {
-    const [votes, setVotes] = useState(props.votes);
+    const emoji = {
+        ...props,
+    };
+
+    const [votes, setVotes] = useState(emoji.votes);
 
     const increaseVote = () => {
-        setVotes(votes + 1);
-        console.log(props.votes);
+        setVotes((prevState) => prevState + 1);
+        emoji.votes += votes + 1;
     };
 
     return (
-        <li key={props.id} className="votes__item">
-            <button onClick={increaseVote} className="votes__btn">{props.label}</button>
+        <li key={emoji.id} className="votes__item">
+            <button onClick={increaseVote} className="votes__btn">{emoji.label}</button>
             <span className="votes__number">{votes}</span>
         </li>
     );
