@@ -3,7 +3,8 @@ import Navigation from '../Navigation/Navigation';
 import MainContent from '../MainContent/MainContent';
 import './App.scss';
 
-function App() {
+const App = () => {
+
     return (
         <div className="app">
             <Header />

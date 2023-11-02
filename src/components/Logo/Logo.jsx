@@ -1,7 +1,8 @@
 import logo from '../../assets/logo.svg';
 import './Logo.scss';
 
-function Logo() {
+const Logo = () => {
+
     return (
         <img src={logo} className="logo" alt="logo" />
     );

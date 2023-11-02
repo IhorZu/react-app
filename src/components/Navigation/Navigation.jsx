@@ -1,6 +1,7 @@
 import './Navigation.scss';
 
-function Navigation() {
+const Navigation = () => {
+
     return (
         <nav className="nav">
             <ul className="nav__list">

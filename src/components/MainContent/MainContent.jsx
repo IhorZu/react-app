@@ -1,7 +1,8 @@
 import VoteCounter from '../VoteCounter/VoteCounter';
 import './MainContent.scss';
 
-function MainContent() {
+const MainContent = () => {
+
     return (
         <main className="main">
             <VoteCounter />
