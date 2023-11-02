@@ -1,11 +1,11 @@
-import VoteCounter from '../VoteCounter/VoteCounter';
+import TextField from '../TextField/TextField';
 import './MainContent.scss';
 
 const MainContent = () => {
 
     return (
         <main className="main">
-            <VoteCounter />
+            <TextField />
         </main>
     );
 }
